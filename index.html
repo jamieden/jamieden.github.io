@@ -29,8 +29,62 @@
           position: absolute;
           bottom: 0;
       }
+      
+      .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */ 
+#Home {background-color:red;}
+#About_Me {background-color:green;}
+#YouTube {background-color:blue;}
+#QuantaPC {background-color:orange;}
+            
   </style>
   <body>
+      
+      <div id="Home" class="tabcontent">
+  <h1>Home</h1>
+</div>
+
+<div id="About_Me" class="tabcontent">
+  <h1>About Me</h1>
+</div>
+
+<div id="YouTube" class="tabcontent">
+  <h1>YouTube</h1>
+</div>
+
+<div id="QuantaPC" class="tabcontent">
+  <h1>QuantaPC</h1>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('About_Me', this, 'green')">About Me</button>
+<button class="tablink" onclick="openCity('YouTube', this, 'blue')">YouTube</button>
+<button class="tablink" onclick="openCity('QuantaPC', this, 'orange')">QuantaPC</button>      
+      
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Ad1 -->
 <ins class="adsbygoogle"
