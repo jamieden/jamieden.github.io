@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jamieden.com
+Token: ef87f32fd8000dcbbb8b743ff5a04878c3059608eafdf68eb4eddc76a337226a
